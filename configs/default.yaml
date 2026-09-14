@@ -1,0 +1,35 @@
+model:
+  rgb_channels: 3      # 3 para RGB, ajustar si el ortomosaico es multiespectral
+  chm_channels: 1       # CHM / nDSM
+  base_channels: 32
+  bilinear: true
+
+data:
+  train_dir: data/processed/train
+  val_dir: data/processed/val
+  rgb_scale: 255.0      # divisor para normalizar la imagen óptica a [0,1]
+  chm_max: 40.0          # altura máxima esperada (m) para normalizar el CHM a [0,1]
+
+loss:
+  mask_weight: 1.0
+  dist_weight: 1.0
+  dice_weight: 1.0
+
+training:
+  epochs: 50
+  batch_size: 8
+  lr: 0.001
+  num_workers: 4
+  checkpoint_dir: checkpoints
+
+tiling:
+  tile_size: 256
+  overlap: 32
+  min_valid_fraction: 0.1
+
+inference:
+  tile_size: 256
+  overlap: 64
+  mask_threshold: 0.5
+  min_seed_distance: 4
+  min_instance_area: 5
