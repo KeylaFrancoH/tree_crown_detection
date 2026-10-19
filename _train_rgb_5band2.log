@@ -1,0 +1,111 @@
+2026-10-13 12:34:19,978 [INFO] Usando device=cuda
+2026-10-13 12:36:06,833 [INFO] Epoch 1/50 - train_loss=1.1426 - val_iou=0.4626
+2026-10-13 12:36:06,994 [INFO] Nuevo mejor modelo (val_iou=0.4626) guardado en checkpoints_rgb_5band\best.pth
+2026-10-13 12:37:49,557 [INFO] Epoch 2/50 - train_loss=1.0388 - val_iou=0.4072
+2026-10-13 12:39:34,852 [INFO] Epoch 3/50 - train_loss=0.9909 - val_iou=0.4443
+2026-10-13 14:02:52,207 [INFO] Epoch 4/50 - train_loss=0.9596 - val_iou=0.4950
+2026-10-13 14:02:52,442 [INFO] Nuevo mejor modelo (val_iou=0.4950) guardado en checkpoints_rgb_5band\best.pth
+2026-10-13 14:05:00,612 [INFO] Epoch 5/50 - train_loss=0.9350 - val_iou=0.4746
+2026-10-13 15:29:12,031 [INFO] Epoch 6/50 - train_loss=0.9181 - val_iou=0.4662
+2026-10-13 15:31:42,863 [INFO] Epoch 7/50 - train_loss=0.8925 - val_iou=0.4838
+2026-10-13 15:34:13,751 [INFO] Epoch 8/50 - train_loss=0.8816 - val_iou=0.4796
+2026-10-13 15:36:52,790 [INFO] Epoch 9/50 - train_loss=0.8630 - val_iou=0.4443
+2026-10-13 15:39:24,800 [INFO] Epoch 10/50 - train_loss=0.8509 - val_iou=0.4919
+2026-10-13 15:42:12,621 [INFO] Epoch 11/50 - train_loss=0.8407 - val_iou=0.5289
+2026-10-13 15:42:12,905 [INFO] Nuevo mejor modelo (val_iou=0.5289) guardado en checkpoints_rgb_5band\best.pth
+2026-10-13 15:44:48,305 [INFO] Epoch 12/50 - train_loss=0.8237 - val_iou=0.5356
+2026-10-13 15:44:48,599 [INFO] Nuevo mejor modelo (val_iou=0.5356) guardado en checkpoints_rgb_5band\best.pth
+2026-10-13 15:48:03,911 [INFO] Epoch 13/50 - train_loss=0.8159 - val_iou=0.4869
+2026-10-13 15:50:32,662 [INFO] Epoch 14/50 - train_loss=0.8005 - val_iou=0.5274
+2026-10-13 15:52:49,465 [INFO] Epoch 15/50 - train_loss=0.7951 - val_iou=0.5345
+2026-10-13 15:55:04,986 [INFO] Epoch 16/50 - train_loss=0.7822 - val_iou=0.4778
+2026-10-13 15:57:29,771 [INFO] Epoch 17/50 - train_loss=0.7774 - val_iou=0.5395
+2026-10-13 15:57:30,002 [INFO] Nuevo mejor modelo (val_iou=0.5395) guardado en checkpoints_rgb_5band\best.pth
+2026-10-13 16:00:00,337 [INFO] Epoch 18/50 - train_loss=0.7663 - val_iou=0.4568
+2026-10-13 16:02:35,102 [INFO] Epoch 19/50 - train_loss=0.7571 - val_iou=0.5226
+2026-10-13 16:05:06,680 [INFO] Epoch 20/50 - train_loss=0.7538 - val_iou=0.5268
+2026-10-13 16:07:38,950 [INFO] Epoch 21/50 - train_loss=0.7444 - val_iou=0.5513
+2026-10-13 16:07:39,172 [INFO] Nuevo mejor modelo (val_iou=0.5513) guardado en checkpoints_rgb_5band\best.pth
+2026-10-13 16:10:16,485 [INFO] Epoch 22/50 - train_loss=0.7424 - val_iou=0.5422
+2026-10-13 16:12:51,940 [INFO] Epoch 23/50 - train_loss=0.7290 - val_iou=0.4413
+2026-10-13 16:15:33,190 [INFO] Epoch 24/50 - train_loss=0.7222 - val_iou=0.5385
+2026-10-13 16:18:05,123 [INFO] Epoch 25/50 - train_loss=0.7133 - val_iou=0.4794
+2026-10-13 16:20:42,700 [INFO] Epoch 26/50 - train_loss=0.7112 - val_iou=0.5421
+2026-10-13 16:23:15,192 [INFO] Epoch 27/50 - train_loss=0.7013 - val_iou=0.4746
+2026-10-13 16:25:45,079 [INFO] Epoch 28/50 - train_loss=0.6963 - val_iou=0.4774
+2026-10-13 16:28:11,886 [INFO] Epoch 29/50 - train_loss=0.6924 - val_iou=0.5130
+2026-10-13 16:30:34,947 [INFO] Epoch 30/50 - train_loss=0.6850 - val_iou=0.5415
+2026-10-13 16:32:56,420 [INFO] Epoch 31/50 - train_loss=0.6787 - val_iou=0.5421
+2026-10-13 16:35:12,249 [INFO] Epoch 32/50 - train_loss=0.6714 - val_iou=0.4893
+2026-10-13 17:01:05,223 [INFO] Epoch 33/50 - train_loss=0.6668 - val_iou=0.5457
+2026-10-13 17:03:21,106 [INFO] Epoch 34/50 - train_loss=0.6604 - val_iou=0.4245
+2026-10-13 17:05:43,037 [INFO] Epoch 35/50 - train_loss=0.6518 - val_iou=0.5593
+2026-10-13 17:05:43,332 [INFO] Nuevo mejor modelo (val_iou=0.5593) guardado en checkpoints_rgb_5band\best.pth
+2026-10-13 17:07:54,483 [INFO] Epoch 36/50 - train_loss=0.6529 - val_iou=0.5591
+2026-10-13 17:10:12,266 [INFO] Epoch 37/50 - train_loss=0.6457 - val_iou=0.5485
+2026-10-13 17:12:27,831 [INFO] Epoch 38/50 - train_loss=0.6435 - val_iou=0.5660
+2026-10-13 17:12:28,043 [INFO] Nuevo mejor modelo (val_iou=0.5660) guardado en checkpoints_rgb_5band\best.pth
+2026-10-13 17:14:43,009 [INFO] Epoch 39/50 - train_loss=0.6343 - val_iou=0.5521
+2026-10-13 17:17:15,176 [INFO] Epoch 40/50 - train_loss=0.6318 - val_iou=0.5334
+2026-10-13 17:19:35,080 [INFO] Epoch 41/50 - train_loss=0.6253 - val_iou=0.5559
+2026-10-13 17:21:55,015 [INFO] Epoch 42/50 - train_loss=0.6223 - val_iou=0.5666
+2026-10-13 17:21:55,226 [INFO] Nuevo mejor modelo (val_iou=0.5666) guardado en checkpoints_rgb_5band\best.pth
+2026-10-13 17:24:10,182 [INFO] Epoch 43/50 - train_loss=0.6149 - val_iou=0.5805
+2026-10-13 17:24:10,355 [INFO] Nuevo mejor modelo (val_iou=0.5805) guardado en checkpoints_rgb_5band\best.pth
+2026-10-13 17:26:25,453 [INFO] Epoch 44/50 - train_loss=0.6144 - val_iou=0.5742
+2026-10-13 17:28:47,387 [INFO] Epoch 45/50 - train_loss=0.6075 - val_iou=0.5032
+2026-10-13 17:31:15,694 [INFO] Epoch 46/50 - train_loss=0.6043 - val_iou=0.5365
+2026-10-13 17:34:18,310 [INFO] Epoch 47/50 - train_loss=0.5986 - val_iou=0.5746
+Traceback (most recent call last):
+  File "C:\Users\Keyla\Desktop\tree_crown_detection\scripts\train.py", line 26, in <module>
+    main()
+  File "C:\Users\Keyla\Desktop\tree_crown_detection\scripts\train.py", line 22, in main
+    train(args.config)
+  File "C:\Users\Keyla\Desktop\tree_crown_detection\src\training\train.py", line 81, in train
+    outputs = model(rgb, chm)
+              ^^^^^^^^^^^^^^^
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Keyla\Desktop\tree_crown_detection\src\models\unet_pretrained.py", line 38, in forward
+    out = self.net(rgb)
+          ^^^^^^^^^^^^^
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\segmentation_models_pytorch\base\model.py", line 67, in forward
+    decoder_output = self.decoder(features)
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\segmentation_models_pytorch\decoders\unet\decoder.py", line 168, in forward
+    x = decoder_block(x, height, width, skip_connection=skip_connection)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\segmentation_models_pytorch\decoders\unet\decoder.py", line 50, in forward
+    feature_map = F.interpolate(
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\torch\nn\functional.py", line 4817, in interpolate
+    return torch._C._nn.upsample_nearest2d(input, output_size, scale_factors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.AcceleratorError: CUDA error: an illegal memory access was encountered
+Search for `cudaErrorIllegalAddress' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+

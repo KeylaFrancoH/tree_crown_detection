@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import numpy as np
 from scipy import ndimage as ndi
+from scipy.ndimage import gaussian_filter
 from skimage.feature import peak_local_max
 from skimage.segmentation import watershed
 
@@ -26,6 +27,8 @@ def instances_from_mask_dist(
     mask_threshold: float = 0.5,
     min_seed_distance: int = 4,
     min_instance_area: int = 5,
+    smooth_sigma: float = 2.0,
+    min_seed_prominence: float = 0.15,
 ) -> np.ndarray:
     """Separa copas contiguas vía watershed marcador-controlado.
 
@@ -36,6 +39,13 @@ def instances_from_mask_dist(
         min_seed_distance: distancia mínima (px) entre semillas/máximos locales;
             controla cuán juntas pueden estar dos copas detectadas como distintas.
         min_instance_area: instancias más chicas que esto (en px²) se descartan.
+        smooth_sigma: suavizado gaussiano de `dist_map` antes de buscar picos.
+            Sin esto, ruido pixel a pixel en la prediccion del modelo genera
+            miles de semillas espurias (sobre-segmentacion severa y watershed
+            muy lento). 0 desactiva el suavizado.
+        min_seed_prominence: valor minimo de `dist_map` (ya suavizado) para
+            que un maximo local cuente como semilla; descarta picos de ruido
+            de muy baja confianza.
 
     Returns:
         instance_map: (H, W) int32, 0 = fondo, 1..N = ID de copa.
@@ -44,9 +54,12 @@ def instances_from_mask_dist(
     if not binary_mask.any():
         return np.zeros(mask_prob.shape, dtype=np.int32)
 
+    dist_for_peaks = gaussian_filter(dist_map, sigma=smooth_sigma) if smooth_sigma > 0 else dist_map
+
     coords = peak_local_max(
-        dist_map,
+        dist_for_peaks,
         min_distance=min_seed_distance,
+        threshold_abs=min_seed_prominence,
         labels=binary_mask,
         exclude_border=False,
     )
@@ -58,7 +71,7 @@ def instances_from_mask_dist(
         # Sin máximos claros (copa muy chica/plana): tratarla como una sola instancia.
         markers, _ = ndi.label(binary_mask)
 
-    instance_map = watershed(-dist_map, markers=markers, mask=binary_mask)
+    instance_map = watershed(-dist_for_peaks, markers=markers, mask=binary_mask)
 
     if min_instance_area > 0:
         for instance_id in np.unique(instance_map):

@@ -1,0 +1,16 @@
+2026-10-13 11:35:28,758 [INFO] Usando device=cuda
+Traceback (most recent call last):
+  File "C:\Users\Keyla\Desktop\tree_crown_detection\scripts\train.py", line 26, in <module>
+    main()
+  File "C:\Users\Keyla\Desktop\tree_crown_detection\scripts\train.py", line 22, in main
+    train(args.config)
+  File "C:\Users\Keyla\Desktop\tree_crown_detection\src\training\train.py", line 83, in train
+    losses["loss"].backward()
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\torch\_tensor.py", line 631, in backward
+    torch.autograd.backward(
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\torch\autograd\__init__.py", line 381, in backward
+    _engine_run_backward(
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\torch\autograd\graph.py", line 869, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: cuDNN error: CUDNN_STATUS_EXECUTION_FAILED_CUDART

@@ -26,7 +26,10 @@ def _iter_windows(width: int, height: int, tile_size: int, stride: int):
         for col in range(0, width, stride):
             w = min(tile_size, width - col)
             h = min(tile_size, height - row)
-            if w <= 0 or h <= 0:
+            if w < tile_size or h < tile_size:
+                # Tile de borde mas chico que tile_size: se descarta en vez de
+                # dejarlo pasar con forma irregular (rompe el collate del
+                # DataLoader, que espera todos los tiles del mismo tamano).
                 continue
             yield row, col, h, w
 
@@ -107,7 +110,10 @@ def tile_dataset(
                 }
 
                 tile_name = f"{prefix}_{row}_{col}"
-                np.savez_compressed(out_path / f"{tile_name}.npz", **sample)
+                # savez_compressed (zlib) es ~10x mas lento que savez para estos
+                # arrays float32 poco compresibles; con el disco disponible no
+                # vale la pena el costo de CPU.
+                np.savez(out_path / f"{tile_name}.npz", **sample)
                 with open(out_path / f"{tile_name}.json", "w") as f:
                     json.dump(meta, f)
                 count += 1

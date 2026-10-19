@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "C:\Users\Keyla\Desktop\tree_crown_detection\scripts\train.py", line 11, in <module>
+    from src.training.train import train
+ModuleNotFoundError: No module named 'src'

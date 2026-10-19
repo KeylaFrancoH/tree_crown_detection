@@ -7,8 +7,9 @@ model:
 data:
   train_dir: data/processed/train
   val_dir: data/processed/val
-  rgb_scale: 255.0      # divisor para normalizar la imagen óptica a [0,1]
-  chm_max: 40.0          # altura máxima esperada (m) para normalizar el CHM a [0,1]
+  rgb_scale: 65535.0    # sensor de 16 bits (no 8 bits); divisor para normalizar a [0,1]
+  chm_max: 10.0          # el "chm" aca es relieve local (altura sobre el terreno circundante,
+                          # no elevacion absoluta): max observado ~8.9m en parcela3 28-1-26
 
 loss:
   mask_weight: 1.0

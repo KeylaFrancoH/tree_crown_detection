@@ -99,8 +99,57 @@ class DualEncoderUNet(nn.Module):
         }
 
 
-def build_model(config: dict) -> DualEncoderUNet:
+class SingleEncoderUNet(nn.Module):
+    """U-Net estandar, un solo encoder. Para el modelo de despliegue: el CHM
+    se usa solo para generar las etiquetas de entrenamiento (ver
+    src/inference/postprocess + el flujo de deteccion de copas por relieve),
+    pero en produccion el usuario solo tiene la foto RGB, asi que este modelo
+    aprende a predecir mascara + mapa de distancia unicamente desde RGB.
+    """
+
+    def __init__(self, rgb_channels: int = 3, base_channels: int = 32, bilinear: bool = True):
+        super().__init__()
+        self.encoder = _Encoder(rgb_channels, base_channels)
+
+        c = base_channels
+        factor = 2 if bilinear else 1
+        self.up1 = Up(c * 16, c * 8, c * 8 // factor, bilinear)
+        self.up2 = Up(c * 8 // factor, c * 4, c * 4 // factor, bilinear)
+        self.up3 = Up(c * 4 // factor, c * 2, c * 2 // factor, bilinear)
+        self.up4 = Up(c * 2 // factor, c, c, bilinear)
+
+        self.mask_head = nn.Conv2d(c, 1, kernel_size=1)
+        self.dist_head = nn.Conv2d(c, 1, kernel_size=1)
+
+    def forward(self, rgb: torch.Tensor, chm: torch.Tensor | None = None) -> dict[str, torch.Tensor]:
+        f1, f2, f3, f4, f5 = self.encoder(rgb)
+        x = self.up1(f5, f4)
+        x = self.up2(x, f3)
+        x = self.up3(x, f2)
+        x = self.up4(x, f1)
+        return {
+            "mask_logits": self.mask_head(x),
+            "dist_map": torch.sigmoid(self.dist_head(x)),
+        }
+
+
+def build_model(config: dict):
     model_cfg = config.get("model", {})
+    model_type = model_cfg.get("type", "dual")
+    if model_type == "rgb_only":
+        return SingleEncoderUNet(
+            rgb_channels=model_cfg.get("rgb_channels", 3),
+            base_channels=model_cfg.get("base_channels", 32),
+            bilinear=model_cfg.get("bilinear", True),
+        )
+    if model_type == "rgb_pretrained":
+        from src.models.unet_pretrained import PretrainedRGBUNet
+
+        return PretrainedRGBUNet(
+            encoder_name=model_cfg.get("encoder_name", "resnet18"),
+            encoder_weights=model_cfg.get("encoder_weights", "imagenet"),
+            rgb_channels=model_cfg.get("rgb_channels", 3),
+        )
     return DualEncoderUNet(
         rgb_channels=model_cfg.get("rgb_channels", 3),
         chm_channels=model_cfg.get("chm_channels", 1),

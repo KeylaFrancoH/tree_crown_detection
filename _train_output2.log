@@ -1,0 +1,60 @@
+2026-10-12 18:46:22,622 [INFO] Usando device=cuda
+2026-10-12 18:46:45,039 [INFO] Epoch 1/50 - train_loss=0.6853 - val_iou=0.4948
+2026-10-12 18:46:45,290 [INFO] Nuevo mejor modelo (val_iou=0.4948) guardado en checkpoints\best.pth
+2026-10-12 18:47:01,438 [INFO] Epoch 2/50 - train_loss=0.4312 - val_iou=0.4948
+2026-10-12 18:47:17,723 [INFO] Epoch 3/50 - train_loss=0.3420 - val_iou=0.5152
+2026-10-12 18:47:17,942 [INFO] Nuevo mejor modelo (val_iou=0.5152) guardado en checkpoints\best.pth
+2026-10-12 18:47:34,073 [INFO] Epoch 4/50 - train_loss=0.2652 - val_iou=0.9562
+2026-10-12 18:47:34,270 [INFO] Nuevo mejor modelo (val_iou=0.9562) guardado en checkpoints\best.pth
+2026-10-12 18:47:50,417 [INFO] Epoch 5/50 - train_loss=0.2244 - val_iou=0.9580
+2026-10-12 18:47:50,647 [INFO] Nuevo mejor modelo (val_iou=0.9580) guardado en checkpoints\best.pth
+2026-10-12 18:48:06,561 [INFO] Epoch 6/50 - train_loss=0.2053 - val_iou=0.9260
+2026-10-12 18:48:22,738 [INFO] Epoch 7/50 - train_loss=0.1937 - val_iou=0.9543
+2026-10-12 18:48:38,610 [INFO] Epoch 8/50 - train_loss=0.1570 - val_iou=0.9719
+2026-10-12 18:48:38,828 [INFO] Nuevo mejor modelo (val_iou=0.9719) guardado en checkpoints\best.pth
+2026-10-12 18:48:54,647 [INFO] Epoch 9/50 - train_loss=0.1427 - val_iou=0.9651
+2026-10-12 18:49:10,670 [INFO] Epoch 10/50 - train_loss=0.1362 - val_iou=0.9637
+2026-10-12 18:49:26,644 [INFO] Epoch 11/50 - train_loss=0.1369 - val_iou=0.9671
+2026-10-12 18:49:42,650 [INFO] Epoch 12/50 - train_loss=0.1304 - val_iou=0.9732
+2026-10-12 18:49:42,850 [INFO] Nuevo mejor modelo (val_iou=0.9732) guardado en checkpoints\best.pth
+2026-10-12 18:49:59,052 [INFO] Epoch 13/50 - train_loss=0.1282 - val_iou=0.9684
+2026-10-12 18:50:15,470 [INFO] Epoch 14/50 - train_loss=0.1172 - val_iou=0.9631
+2026-10-12 18:50:31,726 [INFO] Epoch 15/50 - train_loss=0.1137 - val_iou=0.9679
+2026-10-12 18:50:48,004 [INFO] Epoch 16/50 - train_loss=0.1139 - val_iou=0.9735
+2026-10-12 18:50:48,181 [INFO] Nuevo mejor modelo (val_iou=0.9735) guardado en checkpoints\best.pth
+2026-10-12 18:51:04,299 [INFO] Epoch 17/50 - train_loss=0.1004 - val_iou=0.9727
+2026-10-12 18:51:20,304 [INFO] Epoch 18/50 - train_loss=0.1028 - val_iou=0.9753
+2026-10-12 18:51:20,505 [INFO] Nuevo mejor modelo (val_iou=0.9753) guardado en checkpoints\best.pth
+2026-10-12 18:51:37,257 [INFO] Epoch 19/50 - train_loss=0.1024 - val_iou=0.9728
+2026-10-12 18:51:53,731 [INFO] Epoch 20/50 - train_loss=0.1061 - val_iou=0.9717
+2026-10-12 18:52:09,608 [INFO] Epoch 21/50 - train_loss=0.1032 - val_iou=0.9741
+2026-10-12 18:52:25,500 [INFO] Epoch 22/50 - train_loss=0.0925 - val_iou=0.9731
+2026-10-12 18:52:41,327 [INFO] Epoch 23/50 - train_loss=0.1040 - val_iou=0.9707
+2026-10-12 18:52:57,139 [INFO] Epoch 24/50 - train_loss=0.0969 - val_iou=0.9737
+2026-10-12 18:53:13,149 [INFO] Epoch 25/50 - train_loss=0.0988 - val_iou=0.9654
+2026-10-12 18:53:29,119 [INFO] Epoch 26/50 - train_loss=0.0986 - val_iou=0.9708
+2026-10-12 18:53:44,896 [INFO] Epoch 27/50 - train_loss=0.0885 - val_iou=0.9645
+2026-10-12 18:54:00,911 [INFO] Epoch 28/50 - train_loss=0.0916 - val_iou=0.9682
+2026-10-12 18:54:16,668 [INFO] Epoch 29/50 - train_loss=0.0874 - val_iou=0.9708
+2026-10-12 18:54:32,464 [INFO] Epoch 30/50 - train_loss=0.0901 - val_iou=0.9741
+2026-10-12 18:54:48,399 [INFO] Epoch 31/50 - train_loss=0.0944 - val_iou=0.9776
+2026-10-12 18:54:48,590 [INFO] Nuevo mejor modelo (val_iou=0.9776) guardado en checkpoints\best.pth
+2026-10-12 18:55:03,997 [INFO] Epoch 32/50 - train_loss=0.0882 - val_iou=0.9710
+2026-10-12 18:55:19,706 [INFO] Epoch 33/50 - train_loss=0.0937 - val_iou=0.9610
+2026-10-12 18:55:35,585 [INFO] Epoch 34/50 - train_loss=0.0880 - val_iou=0.9696
+2026-10-12 18:55:51,607 [INFO] Epoch 35/50 - train_loss=0.0855 - val_iou=0.9758
+2026-10-12 18:56:07,607 [INFO] Epoch 36/50 - train_loss=0.0785 - val_iou=0.9750
+2026-10-12 18:56:23,634 [INFO] Epoch 37/50 - train_loss=0.0737 - val_iou=0.9741
+2026-10-12 18:56:39,700 [INFO] Epoch 38/50 - train_loss=0.0696 - val_iou=0.9723
+2026-10-12 18:56:55,630 [INFO] Epoch 39/50 - train_loss=0.0828 - val_iou=0.9571
+2026-10-12 18:57:11,517 [INFO] Epoch 40/50 - train_loss=0.0956 - val_iou=0.9661
+2026-10-12 18:57:26,839 [INFO] Epoch 41/50 - train_loss=0.0962 - val_iou=0.9621
+2026-10-12 18:57:42,675 [INFO] Epoch 42/50 - train_loss=0.0838 - val_iou=0.9762
+2026-10-12 18:57:58,670 [INFO] Epoch 43/50 - train_loss=0.0823 - val_iou=0.9741
+2026-10-12 18:58:14,884 [INFO] Epoch 44/50 - train_loss=0.0816 - val_iou=0.9745
+2026-10-12 18:58:31,025 [INFO] Epoch 45/50 - train_loss=0.0855 - val_iou=0.9709
+2026-10-12 18:58:46,847 [INFO] Epoch 46/50 - train_loss=0.0801 - val_iou=0.9733
+2026-10-12 18:59:02,469 [INFO] Epoch 47/50 - train_loss=0.0801 - val_iou=0.9746
+2026-10-12 18:59:18,498 [INFO] Epoch 48/50 - train_loss=0.0810 - val_iou=0.9647
+2026-10-12 18:59:34,376 [INFO] Epoch 49/50 - train_loss=0.0827 - val_iou=0.9754
+2026-10-12 18:59:50,320 [INFO] Epoch 50/50 - train_loss=0.0718 - val_iou=0.9643

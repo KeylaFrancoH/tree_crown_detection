@@ -1,0 +1,42 @@
+2026-10-12 23:43:09,876 [INFO] Usando device=cuda
+Traceback (most recent call last):
+  File "C:\Users\Keyla\Desktop\tree_crown_detection\scripts\train.py", line 26, in <module>
+    main()
+  File "C:\Users\Keyla\Desktop\tree_crown_detection\scripts\train.py", line 22, in main
+    train(args.config)
+  File "C:\Users\Keyla\Desktop\tree_crown_detection\src\training\train.py", line 75, in train
+    for batch in train_loader:
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\torch\utils\data\dataloader.py", line 741, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\torch\utils\data\dataloader.py", line 1548, in _next_data
+    return self._process_data(data, worker_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\torch\utils\data\dataloader.py", line 1586, in _process_data
+    data.reraise()
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\torch\_utils.py", line 785, in reraise
+    raise exception
+RuntimeError: Caught RuntimeError in DataLoader worker process 1.
+Original Traceback (most recent call last):
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\torch\utils\data\_utils\worker.py", line 358, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 57, in fetch
+    return self.collate_fn(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\torch\utils\data\_utils\collate.py", line 401, in default_collate
+    return collate(batch, collate_fn_map=default_collate_fn_map)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\torch\utils\data\_utils\collate.py", line 171, in collate
+    {
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\torch\utils\data\_utils\collate.py", line 172, in <dictcomp>
+    key: collate(
+         ^^^^^^^^
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\torch\utils\data\_utils\collate.py", line 155, in collate
+    return collate_fn_map[elem_type](batch, collate_fn_map=collate_fn_map)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Keyla\miniconda3\envs\treecrown-train\Lib\site-packages\torch\utils\data\_utils\collate.py", line 274, in collate_tensor_fn
+    out = elem.new(storage).resize_(len(batch), *list(elem.size()))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Trying to resize storage that is not resizable
+

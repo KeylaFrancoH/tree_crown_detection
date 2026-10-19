@@ -1,0 +1,68 @@
+2026-10-12 22:55:02,740 [INFO] Usando device=cuda
+2026-10-12 22:55:30,657 [INFO] Epoch 1/50 - train_loss=1.1702 - val_iou=0.5459
+2026-10-12 22:55:30,944 [INFO] Nuevo mejor modelo (val_iou=0.5459) guardado en checkpoints_rgb_pretrained\best.pth
+2026-10-12 22:55:50,933 [INFO] Epoch 2/50 - train_loss=1.0062 - val_iou=0.5844
+2026-10-12 22:55:51,243 [INFO] Nuevo mejor modelo (val_iou=0.5844) guardado en checkpoints_rgb_pretrained\best.pth
+2026-10-12 22:56:11,190 [INFO] Epoch 3/50 - train_loss=0.9241 - val_iou=0.6156
+2026-10-12 22:56:11,503 [INFO] Nuevo mejor modelo (val_iou=0.6156) guardado en checkpoints_rgb_pretrained\best.pth
+2026-10-12 22:56:31,162 [INFO] Epoch 4/50 - train_loss=0.8738 - val_iou=0.5592
+2026-10-12 22:56:53,212 [INFO] Epoch 5/50 - train_loss=0.8522 - val_iou=0.6099
+2026-10-12 22:57:11,936 [INFO] Epoch 6/50 - train_loss=0.8009 - val_iou=0.6282
+2026-10-12 22:57:12,096 [INFO] Nuevo mejor modelo (val_iou=0.6282) guardado en checkpoints_rgb_pretrained\best.pth
+2026-10-12 22:57:30,262 [INFO] Epoch 7/50 - train_loss=0.7936 - val_iou=0.6437
+2026-10-12 22:57:30,407 [INFO] Nuevo mejor modelo (val_iou=0.6437) guardado en checkpoints_rgb_pretrained\best.pth
+2026-10-12 22:57:47,819 [INFO] Epoch 8/50 - train_loss=0.7448 - val_iou=0.6369
+2026-10-12 22:58:04,786 [INFO] Epoch 9/50 - train_loss=0.7332 - val_iou=0.6615
+2026-10-12 22:58:04,939 [INFO] Nuevo mejor modelo (val_iou=0.6615) guardado en checkpoints_rgb_pretrained\best.pth
+2026-10-12 22:58:22,389 [INFO] Epoch 10/50 - train_loss=0.7100 - val_iou=0.6287
+2026-10-12 22:58:40,233 [INFO] Epoch 11/50 - train_loss=0.6958 - val_iou=0.5944
+2026-10-12 22:58:57,935 [INFO] Epoch 12/50 - train_loss=0.6854 - val_iou=0.6650
+2026-10-12 22:58:58,084 [INFO] Nuevo mejor modelo (val_iou=0.6650) guardado en checkpoints_rgb_pretrained\best.pth
+2026-10-12 22:59:15,874 [INFO] Epoch 13/50 - train_loss=0.6551 - val_iou=0.6662
+2026-10-12 22:59:16,034 [INFO] Nuevo mejor modelo (val_iou=0.6662) guardado en checkpoints_rgb_pretrained\best.pth
+2026-10-12 22:59:34,519 [INFO] Epoch 14/50 - train_loss=0.6506 - val_iou=0.6520
+2026-10-12 22:59:53,163 [INFO] Epoch 15/50 - train_loss=0.6310 - val_iou=0.6535
+2026-10-12 23:00:10,529 [INFO] Epoch 16/50 - train_loss=0.6122 - val_iou=0.6128
+2026-10-12 23:00:25,657 [INFO] Epoch 17/50 - train_loss=0.5993 - val_iou=0.6547
+2026-10-12 23:00:40,945 [INFO] Epoch 18/50 - train_loss=0.5785 - val_iou=0.6835
+2026-10-12 23:00:41,120 [INFO] Nuevo mejor modelo (val_iou=0.6835) guardado en checkpoints_rgb_pretrained\best.pth
+2026-10-12 23:00:56,141 [INFO] Epoch 19/50 - train_loss=0.5739 - val_iou=0.6811
+2026-10-12 23:01:11,277 [INFO] Epoch 20/50 - train_loss=0.5550 - val_iou=0.6616
+2026-10-12 23:01:26,231 [INFO] Epoch 21/50 - train_loss=0.5608 - val_iou=0.6858
+2026-10-12 23:01:26,415 [INFO] Nuevo mejor modelo (val_iou=0.6858) guardado en checkpoints_rgb_pretrained\best.pth
+2026-10-12 23:01:41,263 [INFO] Epoch 22/50 - train_loss=0.5551 - val_iou=0.6841
+2026-10-12 23:01:58,951 [INFO] Epoch 23/50 - train_loss=0.5306 - val_iou=0.6615
+2026-10-12 23:02:17,216 [INFO] Epoch 24/50 - train_loss=0.5345 - val_iou=0.6883
+2026-10-12 23:02:17,467 [INFO] Nuevo mejor modelo (val_iou=0.6883) guardado en checkpoints_rgb_pretrained\best.pth
+2026-10-12 23:02:35,270 [INFO] Epoch 25/50 - train_loss=0.5224 - val_iou=0.6712
+2026-10-12 23:02:53,046 [INFO] Epoch 26/50 - train_loss=0.5014 - val_iou=0.6730
+2026-10-12 23:03:10,622 [INFO] Epoch 27/50 - train_loss=0.5131 - val_iou=0.6808
+2026-10-12 23:03:26,736 [INFO] Epoch 28/50 - train_loss=0.4899 - val_iou=0.6905
+2026-10-12 23:03:26,871 [INFO] Nuevo mejor modelo (val_iou=0.6905) guardado en checkpoints_rgb_pretrained\best.pth
+2026-10-12 23:03:44,208 [INFO] Epoch 29/50 - train_loss=0.4772 - val_iou=0.6935
+2026-10-12 23:03:44,354 [INFO] Nuevo mejor modelo (val_iou=0.6935) guardado en checkpoints_rgb_pretrained\best.pth
+2026-10-12 23:04:01,202 [INFO] Epoch 30/50 - train_loss=0.4765 - val_iou=0.6990
+2026-10-12 23:04:01,350 [INFO] Nuevo mejor modelo (val_iou=0.6990) guardado en checkpoints_rgb_pretrained\best.pth
+2026-10-12 23:04:16,570 [INFO] Epoch 31/50 - train_loss=0.4627 - val_iou=0.7008
+2026-10-12 23:04:16,722 [INFO] Nuevo mejor modelo (val_iou=0.7008) guardado en checkpoints_rgb_pretrained\best.pth
+2026-10-12 23:04:31,745 [INFO] Epoch 32/50 - train_loss=0.4777 - val_iou=0.6905
+2026-10-12 23:04:46,972 [INFO] Epoch 33/50 - train_loss=0.4546 - val_iou=0.6730
+2026-10-12 23:05:02,343 [INFO] Epoch 34/50 - train_loss=0.4447 - val_iou=0.6771
+2026-10-12 23:05:17,466 [INFO] Epoch 35/50 - train_loss=0.4432 - val_iou=0.6987
+2026-10-12 23:05:32,784 [INFO] Epoch 36/50 - train_loss=0.4315 - val_iou=0.6925
+2026-10-12 23:05:48,030 [INFO] Epoch 37/50 - train_loss=0.4375 - val_iou=0.7025
+2026-10-12 23:05:48,163 [INFO] Nuevo mejor modelo (val_iou=0.7025) guardado en checkpoints_rgb_pretrained\best.pth
+2026-10-12 23:06:03,190 [INFO] Epoch 38/50 - train_loss=0.4239 - val_iou=0.6997
+2026-10-12 23:06:19,424 [INFO] Epoch 39/50 - train_loss=0.4121 - val_iou=0.6985
+2026-10-12 23:06:40,469 [INFO] Epoch 40/50 - train_loss=0.4144 - val_iou=0.6790
+2026-10-12 23:06:58,486 [INFO] Epoch 41/50 - train_loss=0.4111 - val_iou=0.6860
+2026-10-12 23:07:16,374 [INFO] Epoch 42/50 - train_loss=0.3987 - val_iou=0.6980
+2026-10-12 23:07:34,356 [INFO] Epoch 43/50 - train_loss=0.3821 - val_iou=0.6899
+2026-10-12 23:07:51,315 [INFO] Epoch 44/50 - train_loss=0.3831 - val_iou=0.6920
+2026-10-12 23:08:06,909 [INFO] Epoch 45/50 - train_loss=0.3899 - val_iou=0.6896
+2026-10-12 23:08:24,210 [INFO] Epoch 46/50 - train_loss=0.3742 - val_iou=0.6889
+2026-10-12 23:08:41,520 [INFO] Epoch 47/50 - train_loss=0.3721 - val_iou=0.6983
+2026-10-12 23:08:58,771 [INFO] Epoch 48/50 - train_loss=0.3686 - val_iou=0.7084
+2026-10-12 23:08:58,934 [INFO] Nuevo mejor modelo (val_iou=0.7084) guardado en checkpoints_rgb_pretrained\best.pth
+2026-10-12 23:09:15,918 [INFO] Epoch 49/50 - train_loss=0.3628 - val_iou=0.6955
+2026-10-12 23:09:32,538 [INFO] Epoch 50/50 - train_loss=0.3662 - val_iou=0.6934
