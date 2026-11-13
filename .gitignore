@@ -2,10 +2,15 @@ __pycache__/
 *.pyc
 .pytest_cache/
 checkpoints/
+checkpoints_cedia/
+checkpoints_cedia_long/
 results/
+proyecto_cedia/
+.venv/
 
 # Datos (rasters y tiles suelen ser pesados y no versionarse en git)
 data/raw/**/*.tif
 data/raw/**/*.tiff
 data/processed/**/*.npz
 data/processed/**/*.json
+cedia_dataset/

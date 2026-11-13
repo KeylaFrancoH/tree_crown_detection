@@ -65,6 +65,9 @@ def train(config_path: str) -> None:
     optimizer = torch.optim.Adam(model.parameters(), lr=config["training"].get("lr", 1e-3))
 
     epochs = config["training"].get("epochs", 50)
+    # Cosine decay: con datasets chicos un LR constante tiende a hacer oscilar
+    # val_iou entre épocas en vez de converger establemente.
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs)
     ckpt_dir = Path(config["training"].get("checkpoint_dir", "checkpoints"))
     ckpt_dir.mkdir(parents=True, exist_ok=True)
 
@@ -85,6 +88,7 @@ def train(config_path: str) -> None:
             train_loss += losses["loss"].item()
 
         train_loss /= max(len(train_loader), 1)
+        scheduler.step()
 
         model.eval()
         val_iou = 0.0
@@ -97,7 +101,10 @@ def train(config_path: str) -> None:
                 val_iou += binary_iou(outputs["mask_logits"], mask_gt)
         val_iou /= max(len(val_loader), 1)
 
-        logger.info("Epoch %d/%d - train_loss=%.4f - val_iou=%.4f", epoch, epochs, train_loss, val_iou)
+        logger.info(
+            "Epoch %d/%d - train_loss=%.4f - val_iou=%.4f - lr=%.2e",
+            epoch, epochs, train_loss, val_iou, optimizer.param_groups[0]["lr"],
+        )
 
         torch.save(model.state_dict(), ckpt_dir / "last.pth")
         if val_iou > best_iou:

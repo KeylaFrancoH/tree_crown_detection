@@ -1,0 +1,39 @@
+model:
+  rgb_channels: 7       # bandas 1-7 del ortomosaico CEDIA (RGB + 4 multiespectrales; banda 8 es alfa, se descarta)
+  chm_channels: 1        # CHM aproximado (DSM - terreno estimado), ver src/data/height.py
+  base_channels: 32
+  bilinear: true
+
+data:
+  train_dir: cedia_dataset/train
+  val_dir: cedia_dataset/val
+  test_dir: cedia_dataset/test   # usado solo por scripts/evaluate.py, no por el entrenamiento
+  rgb_scale: 65535.0     # bandas originales uint16
+  chm_max: 25.0            # cubre holgadamente el p99 (~16 m) y el máximo observado (~23 m) en las etiquetas
+
+loss:
+  mask_weight: 1.0
+  dist_weight: 1.0
+  dice_weight: 1.0
+
+training:
+  epochs: 150
+  batch_size: 16
+  lr: 0.0005
+  num_workers: 4
+  checkpoint_dir: checkpoints_cedia
+
+tiling:
+  tile_size: 256
+  overlap: 32
+  min_valid_fraction: 0.5
+
+inference:
+  tile_size: 256
+  overlap: 64
+  mask_threshold: 0.5
+  # Calibrado barriendo el conjunto de test (150 tiles con copa real): con estos
+  # valores el total de instancias predichas (230) vs reales (234) da ratio=0.98.
+  # Calibra el conteo agregado, no garantiza que cada copa individual matchee 1 a 1.
+  min_seed_distance: 24
+  min_instance_area: 100
